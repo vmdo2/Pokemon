@@ -1,5 +1,5 @@
 # MP 2: New Clear REACTive App
-### Due: March 11th, 2019, 11.59PM CDT
+### Due: October 13th, 2021, 11:59PM CDT
 
 ## Table of Contents
 1. [Assignment](#assignment)
@@ -16,22 +16,28 @@ In this programming assignment, you will implement a front-end interface using R
 
 #### Requirements
 Create a single-page React app that lets users interact with the data from one of the following APIs.
-  - TMDB (https://www.themoviedb.org/documentation/api)
-  - Spotify (https://developer.spotify.com/web-api/)
-  - Pokemon (https://pokeapi.co/)
-  - Marvel (https://developer.marvel.com/)
-  - NASA (https://api.nasa.gov/index.html)
+  - [TMDB](https://www.themoviedb.org/documentation/api)
+  - [Pokemon](https://pokeapi.co/)
+  - [NASA](https://api.nasa.gov/index.html)
+  - [Marvel](https://developer.marvel.com/)
+  - [COVID-19](https://covid19api.com/) (5 req/second)
+  - [CoinAPI](https://www.coinapi.io/)
+  - [Balldontlie](https://www.balldontlie.io/) 
 
-Note that you may need to create an account and/or acquire an API key for some of the APIs.
-Additionally, the API you are working with may become temporarily unavailable.
-If/when this happens, it doesn't mean you are blocked from working on the MP.
-You can mock the data, i.e. create a local hard coded response and use that instead of making the request.
-This is also a good opportunity to think about how your app should handle errors.
+**Note that you may need to create an account and/or acquire an API key for some of the APIs.**
+**Additionally, the API you are working with may become temporarily unavailable.**
+**If/when this happens, it doesn't mean you are blocked from working on the MP.**
+**You can mock the data, i.e. create a local hard coded response and use that instead of making the request.**
+**This is also a good opportunity to think about how your app should handle errors.**
+**Another issue you may need to deal with is apis that have rate limiting policies.**
+**You can find ways to get around them like caching the results of large and common api calls**
 
 Your app should have the following features:
-  - **A list view**:  where users can input a search query and the app returns a list of results that match the query (i.e. searching movies or albums). There should also be a way to sort the search results based on different properties of the results (such as the name or rank) and of specifying an ordering (ascending and descending). Also, the search bar should filter as you type. You can sort and filter in the client side.
+  - **A list view**:  where users can input a query into a search bar and the app returns a list of results that match the query (i.e. searching movies or pokemon). There should also be a way to sort the search results based on different properties of the results (such as the name or rank) and of specifying an ordering (ascending and descending). Also, the search bar should filter as you type. You can sort and filter in the client side.
   - **A gallery view**: that displays some kind of image media from the chosen API (gallery of movie posters). The gallery view should also have some kind filtering attribute where users can select one or many attributes and filter the gallery by them (i.e. genres of films or music).
   -  **A detail view**: When an item in the search view or the gallery view is clicked, the app should display the different attributes of the selected item. Also, this view should have previous and next buttons (can be implemented with arrows) that lets the user cycle through the list of objects.
+
+Here's an old example that fulfills these requirements: https://www.youtube.com/watch?v=DmDZuAr7QJE
 
 You will also be required to use following tools:
   - Use React Router for routing.
@@ -43,13 +49,13 @@ Total Points : 100
 
 List View:
   - Does the list view display relevant items from the chosen API ? (4 points)
-  - Does the search bar filter down the items based on the search? (8 points)
+  - Does the search bar filter down items based on the search? (8 points)
   - Can you sort by at least 2 properties?  (8 points)
   - Can the properties be sorted in Ascending and Descending order?  (8 points)
 
 Gallery View:
   - Is the gallery composed of item media?  (4 points)
-  - Does clicking on a filter change the results?  (8 points)
+  - Does clicking on a filter change results accordingly?  (8 points)
 
 Details View:
   - Does clicking on an item in List View take you to the Details View?  (10 points)
@@ -93,13 +99,13 @@ You may be wondering how the command `npx create-react-app my-app` works and why
 
 Here's what you will need to submit:
 1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is not checked.
-2. Change the remote url for the mp2 directory to the url of the new private repository you created.
+2. On local machine, run `npx create-react-app mp2` to create starter code and `cd mp2` to enter into react app directory.
+3. Add url of the private repository you created as the remote url for your react app.
 ```
-git remote rename origin old-origin
-git remote add origin git@gitlab.com:<your-gitlab-username>/mp2.git
+git remote add origin <your-repo-url>
 ```
-3. Commit and push your local changes to this new repository.
-4. `.gitlab-ci.yml` file automatically makes a Gitlab CI pipeline run to deploy your code. After the pipeline finishes, your site should be live at `https://<your-gitlab-username>.gitlab.io/mp2`. **It may take up to 10-30 minutes for the site to go live after the first deployment.**
-5. Invite `uiucwp` as a collaborator. This should be as a **reporter**, not as a *guest*, otherwise we can't see your code.
-6. Fill out and submit the form [here](https://forms.gle/BAxKqHmw4FemLwyh7).
-
+4. Copy over our `.gitlab-ci.yml` file from this repostiory to your local repository.
+5. Commit and push your local changes to this new repository.
+6. `.gitlab-ci.yml` file automatically makes a Gitlab CI pipeline run to deploy your code. After the pipeline finishes, your site should be live at `https://<your-gitlab-username>.gitlab.io/mp2`. **It may take up to 10-30 minutes for the site to go live after the first deployment.**
+7. Invite `uiucwp` as a collaborator. This should be as a **reporter**, not as a *guest*, otherwise we can't see your code.
+8. Fill out and submit the form [here](https://forms.gle/QQx5se1bADoBDiNL9).
