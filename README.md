@@ -42,7 +42,7 @@ Here's an old example that fulfills these requirements: https://www.youtube.com/
 You will also be required to use following tools:
   - Use React Router for routing.
   - Use Axios for API calls.
-  - Use PropTypes. https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+  - Use [PropTypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) or [TypeScript](https://www.typescriptlang.org/docs/handbook/react.html).
 
 ## Grading Breakdown
 Total Points : 100
@@ -64,7 +64,7 @@ Details View:
   - Do the PREVIOUS and NEXT buttons work correctly?  (10 points)
 
 Other:
-  - Does the implementation use React Router and PropTypes?  (12 points)
+  - Does the implementation use React Router and PropTypes/TypeScript?  (12 points)
   - Design (10 points)
 
 ## Tips
@@ -81,8 +81,7 @@ Other:
 4. No inline script tags should be used.
 5. HTML tables cannot be used for layout.
 6. If you think something you’re doing might not be acceptable, please ask on Piazza.
-7. You must utilize some SCSS features (variables, mixins, etc). A plain CSS file will receive less points.
-8. We *strongly* recommend using `Create React App` to get your MP started. If you ignore this, we will not help with any environment issues.
+7. We *strongly* recommend using `Create React App` to get your MP started. If you ignore this, we will not help with any environment issues.
 
 ## Getting Started
 1. Use `Create React App` (CRA) (see below) to generate your MP starter code in a directory of your choice.
