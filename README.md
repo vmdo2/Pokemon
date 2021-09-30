@@ -25,12 +25,12 @@ Create a single-page React app that lets users interact with the data from one o
   - [Balldontlie](https://www.balldontlie.io/) 
 
 **Note that you may need to create an account and/or acquire an API key for some of the APIs.**
-**Additionally, the API you are working with may become temporarily unavailable.**
-**If/when this happens, it doesn't mean you are blocked from working on the MP.**
-**You can mock the data, i.e. create a local hard coded response and use that instead of making the request.**
-**This is also a good opportunity to think about how your app should handle errors.**
-**Another issue you may need to deal with is apis that have rate limiting policies.**
-**You can find ways to get around them like caching the results of large and common api calls**
+
+**The API you are working with may become temporarily unavailable. If/when this happens, it doesn't mean you are blocked from working on the MP. You can mock the data, i.e. create a local hard coded response and use that instead of making the request.**
+
+**You may need to deal with APIs having rate-limiting policies. You can find ways to get around them like caching the results of large and common API calls**
+
+**These are also good opportunities to think about how your app should handle errors.**
 
 Your app should have the following features:
   - **A list view**:  where users can input a query into a search bar and the app returns a list of results that match the query (i.e. searching movies or pokemon). There should also be a way to sort the search results based on different properties of the results (such as the name or rank) and of specifying an ordering (ascending and descending). Also, the search bar should filter as you type. You can sort and filter in the client side.
@@ -40,8 +40,8 @@ Your app should have the following features:
 Here's an old example that fulfills these requirements: https://www.youtube.com/watch?v=DmDZuAr7QJE
 
 You will also be required to use following tools:
-  - Use React Router for routing.
-  - Use Axios for API calls.
+  - Use [React Router](https://reactrouter.com/web/guides/quick-start) for routing.
+  - Use [Axios](https://www.npmjs.com/package/axios) for API calls.
   - Use [PropTypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) or [TypeScript](https://www.typescriptlang.org/docs/handbook/react.html).
 
 ## Grading Breakdown
@@ -70,7 +70,7 @@ Other:
 ## Tips
   - Start early! This is first MP that uses React so start ahead.
   - Visit https://reactjs.org/docs/faq-structure.html for examples on how to structure your React files.
-  - You may use a React component library for this MP. We suggest Semantic UI.
+  - You may use a React component library for this MP.
   - We recommend using [Normalize.css](https://necolas.github.io/normalize.css/).
   - We recommend using [CSS Modules](https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e).
 
@@ -97,7 +97,7 @@ You may be wondering how the command `npx create-react-app my-app` works and why
 ## Submission Details
 
 Here's what you will need to submit:
-1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is not checked.
+1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is **not** checked.
 2. On local machine, run `npx create-react-app mp2` to create starter code and `cd mp2` to enter into react app directory.
 3. Add url of the private repository you created as the remote url for your react app.
 ```
