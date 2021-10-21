@@ -96,7 +96,7 @@ You may be wondering how the command `npx create-react-app my-app` works and why
 ## Submission Details
 
 Here's what you will need to submit:
-1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is **not** checked.
+1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is **not** checked. **Do not clone this repository, steps 2-4 set up the local GitLab repo for you.**
 2. On local machine, run `npx create-react-app mp2` to create starter code and `cd mp2` to enter into react app directory. **Do not clone your git repo and run create-react-app in it**. The `create-react-app` will set up the git environment for you.
 3. Add url of the private repository you created as the remote url for your react app.
 ```
