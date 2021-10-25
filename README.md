@@ -21,7 +21,6 @@ Create a single-page React app that lets users interact with the data from one o
   - [NASA](https://api.nasa.gov/index.html)
   - [Marvel](https://developer.marvel.com/)
   - [COVID-19](https://covid19api.com/) (5 req/second)
-  - [CoinAPI](https://www.coinapi.io/)
   - [Balldontlie](https://www.balldontlie.io/) 
 
 **Note that you may need to create an account and/or acquire an API key for some of the APIs.**
@@ -35,7 +34,7 @@ Create a single-page React app that lets users interact with the data from one o
 Your app should have the following features:
   - **A list view**:  where users can input a query into a search bar and the app returns a list of results that match the query (i.e. searching movies or pokemon). There should also be a way to sort the search results based on different properties of the results (such as the name or rank) and of specifying an ordering (ascending and descending). Also, the search bar should filter as you type. You can sort and filter in the client side.
   - **A gallery view**: that displays some kind of image media from the chosen API (gallery of movie posters). The gallery view should also have some kind filtering attribute where users can select one or many attributes and filter the gallery by them (i.e. genres of films or music).
-  -  **A detail view**: When an item in the search view or the gallery view is clicked, the app should display the different attributes of the selected item. Also, this view should have previous and next buttons (can be implemented with arrows) that lets the user cycle through the list of objects.
+  -  **A detail view**: When an item in the search view or the gallery view is clicked, the app should display the different attributes of the selected item. Also, this view should have previous and next buttons (can be implemented with arrows) that lets the user cycle through the list of objects. A detail view should have a specific route when navigated to. Basically, a user should be able to access the detail route through a specific url.
 
 Here's an old example that fulfills these requirements: https://www.youtube.com/watch?v=DmDZuAr7QJE
 
@@ -97,13 +96,13 @@ You may be wondering how the command `npx create-react-app my-app` works and why
 ## Submission Details
 
 Here's what you will need to submit:
-1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is **not** checked.
-2. On local machine, run `npx create-react-app mp2` to create starter code and `cd mp2` to enter into react app directory.
+1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is **not** checked. **Do not clone this repository to your local machine! Steps 2-4 set up the local GitLab repo for you.**
+2. On local machine, run `npx create-react-app mp2` to create starter code and `cd mp2` to enter into react app directory. **Do not clone your git repo and run create-react-app in it**. The `create-react-app` will set up the git environment for you.
 3. Add url of the private repository you created as the remote url for your react app.
 ```
 git remote add origin <your-repo-url>
 ```
-4. Copy over our `.gitlab-ci.yml` file from this repostiory to your local repository.
+4. Copy over our `.gitlab-ci.yml` file from this repostiory to your local repository, **make sure you name the file exactly like it is on this repository (remember the period at the front) or else your pipeline won't run properly.**.
 5. Commit and push your local changes to this new repository.
 6. `.gitlab-ci.yml` file automatically makes a Gitlab CI pipeline run to deploy your code. After the pipeline finishes, your site should be live at `https://<your-gitlab-username>.gitlab.io/mp2`. **It may take up to 10-30 minutes for the site to go live after the first deployment.**
 7. Invite `uiucwp` as a collaborator. This should be as a **reporter**, not as a *guest*, otherwise we can't see your code.
