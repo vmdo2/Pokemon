@@ -23,6 +23,7 @@ Create a single-page React app that lets users interact with the data from one o
   - [COVID-19](https://covid19api.com/) (5 req/second)
   - [CoinAPI](https://www.coinapi.io/)
   - [Balldontlie](https://www.balldontlie.io/) 
+  - [Art Institute of Chicago](https://api.artic.edu/docs/) 
 
 **Note that you may need to create an account and/or acquire an API key for some of the APIs.**
 
