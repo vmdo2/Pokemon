@@ -12,7 +12,7 @@ class App extends Component {
       <Router basename="/mp2">
         <Routes>
           {/* <Route exact path="/" component={Search}/> */}
-          <Route exact path="/gallery" component={Gallery}/>
+          {/* <Route exact path="/gallery" component={Gallery}/> */}
           {/* <Route exact path="/pokemon/:id" component={Detail}/> */}
         </Routes>
       </Router>
