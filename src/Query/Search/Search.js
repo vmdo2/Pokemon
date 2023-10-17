@@ -22,10 +22,10 @@ class Search extends Component {
     };
 
     this.baseUrl = 'https://pokeapi.co/api/v2/pokedex/national';
-    this.inputChangeHandler = this.inputChangeHandler.bind(this);
+    this.searchHandler = this.searchHandler.bind(this);
     this.clickHandler = this.clickHandler.bind(this);
-    this.handleSortChange = this.handleSortChange.bind(this);
-    this.handleOrderChange = this.handleOrderChange.bind(this);
+    this.sortHandler = this.sortHandler.bind(this);
+    this.orderHandler = this.orderHandler.bind(this);
   }
 
   componentDidMount() {
@@ -62,17 +62,17 @@ class Search extends Component {
     });
   }
 
-  inputChangeHandler(event) {
+  searchHandler(event) {
     this.setState({ value: event.target.value });
   }
 
-  handleSortChange(_, data) {
+  sortHandler(_, data) {
     this.setState({ sort: data.value }, () => {
       this.clickHandler();
     });
   }
 
-  handleOrderChange(e) {
+  orderHandler(e) {
     const orderValue = e.target.value;
     this.setState({ order: orderValue }, () => {
       this.clickHandler();
@@ -95,7 +95,7 @@ class Search extends Component {
         <div className="search-container">
           <div className="searchbar">
             <Input
-              onChange={this.inputChangeHandler}
+              onChange={this.searchHandler}
               placeholder='Search a Pokémon here'
               value={this.state.value}
               className="searchbar-input"
@@ -109,7 +109,7 @@ class Search extends Component {
             placeholder="Sort by"
             selection
             options={sortOptions}
-            onChange={this.handleSortChange}
+            onChange={this.sortHandler}
             value={this.state.sort}
           />
         </div>
@@ -121,7 +121,7 @@ class Search extends Component {
                 type="radio"
                 value="Ascending"
                 checked={this.state.order === "Ascending"}
-                onChange={this.handleOrderChange}
+                onChange={this.orderHandler}
               />
               Ascending
             </label>
@@ -133,7 +133,7 @@ class Search extends Component {
                 type="radio"
                 value="Descending"
                 checked={this.state.order === "Descending"}
-                onChange={this.handleOrderChange}
+                onChange={this.orderHandler}
               />
               Descending
             </label>

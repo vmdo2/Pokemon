@@ -36,7 +36,7 @@ class Gallery extends Component {
       });
   }
 
-  clickHandler(name) {
+  filterHandler(name) {
     if (this.state.filter === name) {
       this.setState({ filter: '' }); // Deselect the filter if already selected
     } else {
@@ -105,7 +105,7 @@ class Gallery extends Component {
       <button
         key={group.value}
         className={`filter-button ${group.value === this.state.filter ? 'active' : ''}`}
-        onClick={() => this.clickHandler(group.value)}
+        onClick={() => this.filterHandler(group.value)}
       >
         {group.label}
       </button>
