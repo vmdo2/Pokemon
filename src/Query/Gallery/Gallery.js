@@ -58,7 +58,7 @@ class Gallery extends Component {
     }
   }
   render() {
-    const { entries, filter, pokemon, selectedPokemon  } = this.state;
+    const { entries, filter, pokemon  } = this.state;
     return (
       <div>
           <div className="navbar" id="navbar">
