@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { Component } from 'react';
-import {Button, List, Image, Input,  Container  } from "semantic-ui-react";
 import { Link } from 'react-router-dom';
 import 'normalize.css';
 import GalleryDisplay from '../GalleryDisplay/GalleryDisplay.js'
+import {Image,  Container  } from "semantic-ui-react";
 import './Gallery.scss';
 
 class Gallery extends Component {
@@ -49,7 +49,6 @@ class Gallery extends Component {
   
     axios.get(url)
       .then((response) => {
-        // Assuming the response structure contains an array of Pokémon species
         const pokemonSpecies = response.data.pokemon_species;
         this.setState({ pokemon: pokemonSpecies });
       })
