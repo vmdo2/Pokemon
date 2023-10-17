@@ -1,0 +1,29 @@
+.noCharacter {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 10px;
+  }
+  
+  .noCharacter h3 {
+    color: #ff5733;
+  }
+  
+  .pokemonCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .pokemonCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .pokemonCard img {
+    max-width: 100%;
+    height: auto;
+  }
+  

@@ -1,9 +1,10 @@
 import axios from 'axios'
 import React, { Component } from 'react';
-import {Container  } from "semantic-ui-react";
+import {Button, List, Image, Input,  Container  } from "semantic-ui-react";
 import { Link } from 'react-router-dom';
 import 'normalize.css';
 import GalleryDisplay from '../GalleryDisplay/GalleryDisplay.js'
+import './Gallery.scss';
 
 class Gallery extends Component {
   constructor() {
@@ -63,9 +64,9 @@ class Gallery extends Component {
       <div>
           <div className="navbar" id="navbar">
           <div className="container">
-                <img
+                <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
-                  className="image"
+                  className="small-image"
                 />
               </div>
             </div>

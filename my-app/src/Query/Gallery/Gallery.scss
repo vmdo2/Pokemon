@@ -1,64 +1,82 @@
 .selectegg {
 	text-align: center;
-	color: blue;
-}
-
-.filter {
-	background-color: White;
-	text-align: center;
-	padding: 20px;
-}
-
-.filter a {
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	color: black;
-}
-
-.filter a:hover {
-	background-color: red;
-	color:white;
-}
-.filter a.active {
-	background-color: white;
-	color: red;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	color: #007BFF;
+	font-size: 20px;
+	margin-bottom: 10px;
   }
   
-  .image {
-	width: 200px;
-	height: auto;
+  .filter {
+	background-color: #f4f4f4;
+	text-align: center;
+	padding: 10px 0;
   }
-
-.ui card noCharacter:before {
-    content:     "";
-    display:     block;
-    padding-top: 100%;
-}
-
-.filter-button.active {
-	background-color: red;
-	color: white;
+  
+  .filter a {
+	padding: 6px 12px;
+	color: #333;
+	text-decoration: none;
+	margin: 0 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .filter a:hover {
+	background-color: #ccc;
+	color: #fff;
+  }
+  
+  .filter a.active {
+	background-color: #007BFF;
+	color: #fff;
+  }
+  
+  .container {
+	text-align: center;
+  }
+  
+  .small-image {
+	width: 300px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  .filter-button.active {
+	background-color: #007BFF;
+	color: #fff;
   }
   
   .filter-button {
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	color: black;
+	padding: 6px 12px;
+	color: #333;
 	cursor: pointer;
+	margin: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	transition: background-color 0.2s, color 0.2s;
   }
   
   .filter-button:hover {
-	background-color: red;
-	color: white;
+	background-color: #ccc;
+	color: #fff;
   }
+  
+  .menu {
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+  }
+  
+  .menu a {
+	margin-right: 20px;
+	color: #3152af;
+	text-decoration: none;
+	font-size: 18px;
+  }
+  
+  .menu a:last-child {
+	margin-right: 0;
+  }
+  
