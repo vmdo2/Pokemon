@@ -102,13 +102,13 @@ class Gallery extends Component {
     ];
 
     return eggGroups.map((group) => (
-      <a
+      <button
         key={group.value}
         className={`filter-button ${group.value === this.state.filter ? 'active' : ''}`}
         onClick={() => this.clickHandler(group.value)}
       >
         {group.label}
-      </a>
+      </button>
     ));
   }
 }
