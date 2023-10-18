@@ -10,6 +10,7 @@ function PokemonDetails() {
     name: '',
     abilities: [],
     height: '',
+    weight: '',
     stats: [],
   });
 
@@ -22,7 +23,8 @@ function PokemonDetails() {
         setPokemonData({
           name: response.data.name,
           abilities: response.data.abilities,
-          height: response.data.height,
+          height: response.data.height / 10,
+          weight: response.data.weight / 10,
           stats: response.data.stats,
         });
       })
@@ -55,9 +57,9 @@ function PokemonDetails() {
         className={styles.image}
       />
       <div className={styles.info}>
-        <p>Height: {pokemonData.height} cm</p>
+        <p>Height: {pokemonData.height} m</p>
+        <p>Weight: {pokemonData.weight} kg</p>
         <p>Abilities: {pokemonData.abilities.map((ability) => ability.ability.name).join(', ')}</p>
-        {/* Render other Pokemon details here */}
       </div>
       <div className={styles.arrows}>
         <button onClick={handleDecrement}>&larr; Previous</button>
