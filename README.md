@@ -34,3 +34,12 @@ You will also be required to use following tools:
   - Use [React Router](https://reactrouter.com/web/guides/quick-start) for routing.
   - Use [Axios](https://www.npmjs.com/package/axios) for API calls.
   - Use [PropTypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) or [TypeScript](https://www.typescriptlang.org/docs/handbook/react.html).
+
+
+https://github.com/vmdo2/Pokemon/assets/71240971/e43c0311-f038-4b37-9841-6c68de1a84c0
+
+
+https://github.com/vmdo2/Pokemon/assets/71240971/fd078efe-2285-4ea8-8bcb-d9ac5b47bba2
+
+
+
