@@ -1,4 +1,4 @@
-This web application uses React and SCSS to display pokemon information. The data is retrieved from https://pokeapi.co/.
+This web application uses React and SCSS to display pokemon information. The data is retrieved from https://pokeapi.co/. The repository was migrated from GitLab so accessing the website by URL will be denied.
 
 **Search view**
 
